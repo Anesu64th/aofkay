@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Our Success</title>
+           <link rel="stylesheet"href="WOWEMPsuccessstories.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+             <body>
+                 <div class="success">
+                     <font color=#efefef>
+                     <center>
+                  <h1>What we have done so far</h1>
+                    </center>
+                      </font>
+                  <div class="row">
+                      <div class="col">
+                          <div class="feature"> 
+                              <img src="back.jpg" width="100%"> 
+                              <img src="play.png" class="play-btn" onclick="playVideo('no.mp4')">  
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="small-img-row">
+                              <div class="smallimg">
+                                  <img src="back.jpg" width="50%">
+                                  <img src="play.png" class="play-btn" onclick="playVideo('no.mp4')"> 
+                              </div>
+                              <p>We have done video shoots for various artists. Amongst them is<br>
+							  founder of WOWEMP Shawn Ali</p>
+                          </div>
+                          <div class="small-img-row">
+                            <div class="smallimg">
+                                <img src="back.jpg" width="50%">
+                                <img src="play.png" class="play-btn" onclick="playVideo('no.mp4')"> 
+                            </div>
+                            <p>Dj SMOKEY endorses WOWEMP</p>
+                        </div>
+                        <div class="small-img-row">
+                            <div class="smallimg">
+                                <img src="back.jpg" width="50%">
+                                <img src="play.png" class="play-btn" onclick="playVideo('no.mp4')"> 
+                            </div>
+                             <p>Recently wedded couple applaudes WOWEMP for the entertainment provided </p>
+                        </div>
+                        
+                      </div>
+                  </div>
+                 </div>
+                 <div class="video-player" id="VideoPlayer">
+                     <video width="100%"controls autoplay id="myVideo">
+                         <source src="video.mp4"type="video/mp4">
+                     </video>
+                     <img src="x-button.png" class="close-btn" onclick="stopVideo()"> 
+                 </div>
+                 <script>
+                     var VideoPlayer=document.getElementById("VideoPlayer");
+                     var myVideo=document.getElementById("myVideo");
+                     function stopVideo(){
+
+                     VideoPlayer.style.display="none";
+                    }
+                         function playVideo(file){
+                         
+                            myVideo.src=file;
+                            VideoPlayer.style.display="block";
+                     }
+                     </script>
+             </body>
+    </head>
+</html>
